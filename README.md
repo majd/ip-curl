@@ -16,21 +16,10 @@ The tool can be ran in a Docker container or compiled directly on the host.
 
 ### Docker (recommended)
 
-Clone repository
-```
-$ git clone git@github.com:majd/ip-curl.git && cd ip-curl
-```
-
-Build image
-
-```
-$ docker build .
-```
-
 Start container
 
 ```
-$ docker run --rm -p 3000:3000 <sha256>
+$ docker run --rm -p 3000:80 -e PORT=80 ghcr.io/majd/ip-curl
 ```
 
 
@@ -49,7 +38,7 @@ $ go build
 
 Run compiled binary
 ```
-$ ./ip-curl
+$ PORT=3000 ./ip-curl
 ```
 
 ## License
