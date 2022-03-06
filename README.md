@@ -5,10 +5,7 @@
 
 A lightweight tool that starts a web server and returns the client's IP address on every request.
 
-```
-$ curl ip.example.com
-123.1.123.123
-```
+![Demo](./demo.gif)
 
 ## Usage
 
